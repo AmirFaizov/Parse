@@ -1,0 +1,260 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    /*background: url("../style/photo/nice.jpg") center no-repeat;*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    /*color: #dddddd;*/
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px ;
+    color: white;
+    padding: 8px 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+.gradient-button:hover {
+    background-position: right center;
+}
+
+.header_innner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.admin{
+    color: #fff;
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover{
+    color: #fce38a;
+}
+
+.nav__link:hover:after{
+    opacity: 1;
+}
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header_logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #0e0f72;
+}
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+a:-webkit-any-link{
+    color: #dddddd;
+}
+
+
+.price{
+    color: #d5d5d5;
+
+}
+
+/* Intro */
+
+
+.intro-title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*text-align: center;*/
+    line-height: 1;
+    margin: 60px auto;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.button-submit {
+
+    top:50%;
+    background-color: #3fa223;
+    color: #fff;
+}
+.perv{
+    position: absolute;
+    right: 710px;
+    top: 100px;
+    width: 130px;
+}
+
+.vtor{
+    position: absolute;
+    right: 110px;
+    top: 50px;
+    width: 75px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.books-list{
+    margin:0px 50px;
+    z-index: 1000;
+}
+.books-list .book-card{
+    margin:30px 0px;
+    z-index: 1000;
+}
+.books-list .book-description{
+    text-indent:30px;
+}
+.books-list .book-header a{
+    color:#000;
+}
+.books-list .book-header a:hover{
+    text-decoration:underline;
+}
+.books-list .book-header .book-info{
+    color: #d2cf38;
+}
+.books-list .book-header .book-action-icon{
+    float:right;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0px 5px;
+}
+.books-list .book-header .book-name{
+    display:inline-block;
+    color: #d91c1c;
+    font-style: italic;
+    margin:0px;
+}
+.karbonara {
+    position: absolute;
+    top: 540px;
+    right: 720px;
+    width: 110px;
+}
+
+.books-list .book-header .book-name:first-letter{
+    color: #d91c1c;
+    font-size:1.5em;
+}
+.books-list .book-header .book-url{
+    margin-left:5px;
+    color: #d91c1c;
+    margin-right:10px;
+}
+
+/* Standalone book page */
+.book-page{
+    font-size:1.8em;
+    margin:0px 50px;
+}
+.book-page .book-card{
+    margin:5px 0px;
+}
+.book-page .book-description{
+    text-indent:30px;
+}
+.book-page .book-field{
+    font-size:0.7em;
+}
+.book-page .book-field .field-name{
+    font-weight:bold;
+}
+.book-page .book-field .field-value{}
+.book-page .book-header .book-name{
+    float:left;
+    font-style: italic;
+}
+.book-page .book-header .book-name:first-letter{
+    color: #993333;
+    font-size:1.5em;
+}
+
+.global-message{
+    font-size:1.4em;
+    font-weight:bold;
+}
